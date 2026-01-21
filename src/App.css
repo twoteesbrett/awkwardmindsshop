@@ -1,0 +1,66 @@
+:root {
+  --text: #111;
+
+  --swatch-light: #f7f7fb;
+  --swatch-pink: #e36b76;
+  --swatch-orange: #ed7433;
+  --swatch-yellow: #f3ee59;
+  --swatch-green: #c8e093;
+  --swatch-dark: #1a1a1a;
+}
+
+/* simple “glass” nav */
+.nav-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.section-hero {
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg-soft) 100%);
+}
+
+.accent {
+  /* text-decoration: underline; */
+  text-decoration-thickness: 0.2em;
+  /* text-underline-offset: 0.15em; */
+}
+
+/* Colour swatches */
+.swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.swatch-block {
+  height: 90px;
+}
+
+/* Pick colours that match your filament; tweak later */
+.swatch-light { background: var(--swatch-light); }
+.swatch-pink { background: var(--swatch-pink); }
+.swatch-yellow { background: var(--swatch-yellow); }
+.swatch-green { background: var(--swatch-green); }
+.swatch-orange { background: var(--swatch-orange); }
+.swatch-dark { background: var(--swatch-dark); }
+
+.callout {
+  background: rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.hover-lift {
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

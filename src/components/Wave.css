@@ -1,0 +1,14 @@
+/* https://www.shapedivider.app */
+
+.custom-shape-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider svg {
+  display: block;
+  width: calc(100% + 1.3px);
+}
+
