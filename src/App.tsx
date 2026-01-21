@@ -13,6 +13,9 @@ import { PRODUCTS } from "./constants";
 import ShoppingCard from "./components/ShoppingCard";
 import VideoCard from "./components/VideoCard";
 
+const STORAGE_BOX_MARKETPLACE_URL = "https://www.facebook.com/marketplace/item/1423984179388701";
+const TISSUE_BOX_MARKETPLACE_URL = "https://www.facebook.com/marketplace/item/1910999832878490";
+
 const STORAGE_BOX_CLOSED_MODEL = "/models/liquorice_allsort_box_and_lid_100_v7.glb";
 const STORAGE_BOX_OPEN_MODEL = "/models/liquorice_allsort_box_and_lid_100_v7_exploded.glb";
 const TISSUE_BOX_CLOSED_MODEL = "/models/liquorice_allsort_tissue_box.glb";
@@ -60,7 +63,7 @@ export default function App() {
                 <p className="lead mt-3 mb-4">Bright, tidy, and irresistible. Made in New Zealand.</p>
 
                 <div className="d-flex gap-2 flex-wrap">
-                                    <a className="btn btn-lg btn-dark" href="#storage-boxes">
+                  <a className="btn btn-lg btn-dark" href="#storage-boxes">
                     Sizes & prices
                   </a>
                   <a className="btn btn-lg btn-outline-dark" href="#buy">
@@ -103,8 +106,8 @@ export default function App() {
               </p>
               <Alert variant="danger" className="mt-5">
                 <p id="buy" className="lead mt-3">
-                  <FontAwesomeIcon icon={faCircleExclamation} /> These items are not currently sold through an online shop. Orders are available via{" "}
-                  <a href="https://www.facebook.com/marketplace/item/1907424590168700">Facebook Marketplace</a>.
+                  <FontAwesomeIcon icon={faCircleExclamation} /> These items are not currently sold through an online shop. Orders are available via Facebook
+                  Marketplace for <a href={STORAGE_BOX_MARKETPLACE_URL}>storage boxes</a> and <a href={TISSUE_BOX_MARKETPLACE_URL}>tissue box covers</a>.
                 </p>
               </Alert>
             </div>
@@ -123,7 +126,7 @@ export default function App() {
             <div>
               <h2 className="h1 fw-bold mb-2">Storage Boxes</h2>
               <p className="lead">
-                Choose a size. Pick a colour. Order on <a href="https://www.facebook.com/marketplace/item/1907424590168700">Facebook Marketplace</a>.
+                Choose a size. Pick a colour. Order on <a href={STORAGE_BOX_MARKETPLACE_URL}>Facebook Marketplace</a>.
               </p>
             </div>
           </div>
@@ -160,7 +163,7 @@ export default function App() {
             <Col lg={6}>
               <h2 className="h1 fw-bold mb-2">Tissue Box Covers</h2>
               <p className="lead">
-                One size. Pick a colour. Order on <a href="https://www.facebook.com/marketplace/item/1910999832878490">Facebook Marketplace</a>.
+                One size. Pick a colour. Order on <a href={TISSUE_BOX_MARKETPLACE_URL}>Facebook Marketplace</a>.
               </p>
 
               <Row>
@@ -252,12 +255,11 @@ export default function App() {
       <footer className="swatch-dark text-light border-top border-secondary">
         <Container className="py-4">
           <Row className="align-items-center gy-3">
-            {/* Left */}
+
             <Col xs={12} md={6} className="text-center text-md-start">
               <div className="fw-semibold">Awkward Minds &copy; {new Date().getFullYear()}</div>
             </Col>
 
-            {/* Right */}
             <Col xs={12} md={6} className="text-center text-md-end">
               <div className="d-flex justify-content-center justify-content-md-end gap-3">
                 <a
