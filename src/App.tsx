@@ -134,7 +134,7 @@ export default function App() {
           <Row className="g-3">
             {PRODUCTS.map((item) => (
               <Col xs={12} md={6} lg={3}>
-                <GlbViewer key={item.size} src={item.glbSrc} height={400} scale={0.08} className="mb-3" />
+                <GlbViewer key={item.size} src={item.glbSrc} height={400} scale={item.scaleFactor} className="mb-3" />
               </Col>
             ))}
           </Row>
@@ -147,7 +147,7 @@ export default function App() {
           </Row>
 
           <Row className="mt-4">
-            <p>* Colours here may not exactly match the actual printed items.</p>
+            <p>* Scale and colours here do not match the actual printed items.</p>
           </Row>
         </Container>
 
@@ -237,7 +237,7 @@ export default function App() {
 
             {/* Text */}
             <Col xs={12} md={8}>
-              <h2 className="h1 fw-bold mb-3">About the Maker</h2>
+              <h2 className="h1 fw-bold mb-3">About the maker</h2>
               <p className="lead">
                 I’m a 3D printing enthusiast based in Auckland, designing and making inspired pieces as a side hustle. Each item is printed locally using
                 plant-based PLA, with a focus on simple, colourful, and practical design.
