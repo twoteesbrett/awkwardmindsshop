@@ -182,12 +182,12 @@ export default function App() {
 
             <Col lg={3}>
               <div className="mb-2 p-4">
-                <GlbViewer key="tissue-closed" src={TISSUE_BOX_CLOSED_MODEL} height={400} scale={0.07} />
+                <GlbViewer key="tissue-closed" src={TISSUE_BOX_CLOSED_MODEL} height={400} scale={0.06} />
               </div>
             </Col>
             <Col lg={3}>
               <div className="mb-2 p-4">
-                <GlbViewer key="tissue-open" src={TISSUE_BOX_OPEN_MODEL} height={400} scale={0.07} />
+                <GlbViewer key="tissue-open" src={TISSUE_BOX_OPEN_MODEL} height={400} scale={0.06} />
               </div>
             </Col>
           </Row>
