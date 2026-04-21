@@ -14,7 +14,7 @@ import ShoppingCard from "./components/ShoppingCard";
 import VideoCard from "./components/VideoCard";
 
 const STORAGE_BOX_MARKETPLACE_URL = "https://www.facebook.com/marketplace/item/1423984179388701";
-const TISSUE_BOX_MARKETPLACE_URL = "https://www.facebook.com/marketplace/item/1910999832878490";
+const TISSUE_BOX_MARKETPLACE_URL = "https://www.facebook.com/marketplace/item/833615053157677";
 
 const STORAGE_BOX_CLOSED_MODEL = "/models/liquorice_allsort_box_and_lid_100_v7.glb";
 const STORAGE_BOX_OPEN_MODEL = "/models/liquorice_allsort_box_and_lid_100_v7_exploded.glb";
